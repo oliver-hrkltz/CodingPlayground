@@ -1,13 +1,15 @@
+# CodingPlayground / Python / MinimalPython
+
 https://devguide.python.org/getting-started/setup-building/#compile-and-build
 
-# Download The Source Code
+## Download The Source Code
 ```bash
 curl -O https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
 tar -xf Python-3.13.3.tar.xz
 rm Python-3.13.3.tar.xz
 ```
 
-# Run Configuration
+## Run Configuration
 ```bash
 cd Python-3.13.3
 
@@ -25,7 +27,7 @@ cd Python-3.13.3
   --prefix=$(pwd)/minimal-python
 ```
 
-# Exclude Modules
+## Exclude Modules
 
 ```bash
 echo "*disabled*
@@ -37,7 +39,7 @@ audioop mmap fcntl resource grp termios syslog
 " > Modules/Setup.local
 ```
 
-# Build Python
+## Build Python
 
 ```bash
 # produces ./python but no shared objects

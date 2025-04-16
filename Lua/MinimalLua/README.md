@@ -67,6 +67,7 @@ make macosx
 ```bash
 cd lua-5.4.7/src
 ./lua -e 'print("√144 =", math.sqrt(144))' # √144 = 12
-./lua -e 'print("io is", io)' # io is	nil
+./lua -e 'print(io)' # nil
+./lua -e 'require"socket"' # error
 ```
 
